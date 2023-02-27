@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId : f0d1f3fcf196f9bdb41d
+            clientSecret : 123cfbe5d4d28bf836daea61785016dbc2b91dd4
+          google :
+            clientId: 190028478423-s2jc2ruii8nalg6kij1lh4jbfi1b8p04.apps.googleusercontent.com
+            clientSecret: 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
+            accessTokenUri:  https://www.googleapis.com/oauth2/v3/token
+            userAuthorizationUri : https://accounts.google.com/o/oauth2/auth
+
+            scope : profile,email
+            userInfoUri  :  https://www.googleapis.com/userinfo/v2/me
+            preferTokenInfo : false
